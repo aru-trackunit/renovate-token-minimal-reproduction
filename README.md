@@ -1,7 +1,8 @@
 Link to the issue: https://github.com/renovatebot/renovate/discussions/28243
 
-## Current behaviour:
 Tested on version `37.279.4`
+
+## Current behaviour:
 After executing `LOG_LEVEL=debug renovate --platform=local` I get 401 response from Databricks. My suspection is that the token may not be set correctly.
 
 
