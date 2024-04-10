@@ -1,19 +1,5 @@
 Link to the issue: https://github.com/renovatebot/renovate/discussions/28243
 
-## Reproduction steps:
-
-
-1. Run the server:
-```
-pip install -r example-server/requirements.txt
-python example-server/app.py
-```
-
-2. Execute renovate command
-
-3. Observe server logs
-
-
 Tested on version `37.279.4`
 
 ## Current behaviour:

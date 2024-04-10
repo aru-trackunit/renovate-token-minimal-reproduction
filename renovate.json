@@ -2,7 +2,7 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "customDatasources": {
     "databricksSparkVersions": {
-      "defaultRegistryUrlTemplate": "http://localhost:5000",
+      "defaultRegistryUrlTemplate": "https://dbc-a29a0089-30a3.cloud.databricks.com/api/2.0/clusters/spark-versions",
       "format": "json",
       "transformTemplates": ["{\"releases\": $filter(versions, function($v) { $contains($v.key, \"x-scala\") }).{\"version\": key}}"]
     }
@@ -24,7 +24,7 @@
     "custom.regex"
   ],
   "hostRules": [{
-    "matchHost": "http://localhost:5000",
+    "matchHost": "https://dbc-a29a0089-30a3.cloud.databricks.com",
     "authType": "Bearer",
     "token": "dapifaketoken"
   }],
